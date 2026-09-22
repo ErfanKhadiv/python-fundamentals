@@ -1,28 +1,98 @@
 # Python Fundamentals
 
-Four small console/data projects from early Python practice, covering file I/O, data structures, OOP, and NumPy. Kept together in one repo rather than as four sparse standalone ones — these were stepping stones on the way toward the AI/ML-focused work in [HBALS-TSP](https://github.com/ErfanKhadiv/HBALS-TSP).
+A collection of Python practice projects developed to strengthen programming fundamentals, object-oriented design, file handling, and numerical data analysis.
 
-| Project | Focus | Highlights |
-|---|---|---|
-| [`library-management-system/`](library-management-system) | File I/O, CRUD logic | JSON persistence, input validation loops, borrow/return state tracking |
-| [`software-company-oop/`](software-company-oop) | Object-Oriented Programming | Abstract base classes, `@property`/`@classmethod`, inheritance, composition |
-| [`sales-analysis-numpy/`](sales-analysis-numpy) | NumPy / data analysis | Aggregation, broadcasting, filtering, sorting on a 2D array |
-| [`password-manager/`](password-manager) | File I/O, CRUD logic | Same pattern as the library system, applied to account storage |
+The repository contains four small projects, each focused on a different aspect of Python development.
 
-## Running any project
+## 📂 Projects
+
+### 1. Library Management System
+
+A console-based library management application demonstrating file persistence and CRUD operations.
+
+**Concepts:**
+
+* File I/O
+* JSON data persistence
+* CRUD operations
+* Input validation
+* Borrow and return state management
+
+### 2. Software Company — OOP
+
+A small object-oriented system designed to practice fundamental OOP concepts in Python.
+
+**Concepts:**
+
+* Abstract base classes
+* Inheritance
+* Composition
+* `@property`
+* `@classmethod`
+* Object-oriented design
+
+### 3. Sales Analysis with NumPy
+
+A numerical data analysis project using NumPy to process and analyze sales data stored in a two-dimensional array.
+
+**Concepts:**
+
+* NumPy arrays
+* Aggregation
+* Broadcasting
+* Filtering
+* Sorting
+* Basic data analysis
+
+### 4. Password Manager
+
+A console-based application demonstrating file handling and CRUD operations through a simple account-storage system.
+
+**Concepts:**
+
+* File I/O
+* JSON persistence
+* CRUD operations
+* Input validation
+
+> **Security note:** This project stores credentials in plaintext JSON and is intended only as a learning exercise for file handling and CRUD patterns. It should not be used for storing real credentials.
+
+## 🛠️ Technologies
+
+* Python
+* NumPy
+* JSON
+* Object-Oriented Programming
+
+## ▶️ Running the Projects
+
+Navigate to the desired project directory and run:
 
 ```bash
-cd <project-folder>
 python main.py
 ```
 
-`sales-analysis-numpy` needs `numpy` installed (`pip install numpy`); the rest use only the standard library.
+The `sales-analysis-numpy` project requires NumPy:
 
-## Note on password-manager
+```bash
+pip install numpy
+```
 
-This stores credentials in **plaintext JSON** — fine for a learning exercise on file I/O and CRUD patterns, but not how you'd handle real credentials (should use hashing/encryption, e.g. `bcrypt` or the OS keychain). Included here for the pattern, not as a security reference.
--e 
-## License
+The other projects use only Python's standard library.
 
-MIT — see [LICENSE](LICENSE).
+## 📁 Repository Structure
 
+```text
+python-fundamentals/
+├── library-management-system/
+├── password-manager/
+├── sales-analysis-numpy/
+├── software-company-oop/
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+## 📜 License
+
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
